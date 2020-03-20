@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:CRICDatabase/searchable-image-database-angular.git
+[submodule "backend"]
+	path = backend
+	url = git@github.com:CRICDatabase/searchable-image-database-nodejs.git

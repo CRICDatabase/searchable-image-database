@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  # Web service layer & Application service layer
+  node:
+    build:
+      context: backend
+    command: npm run cric_api
+    ports:
+      - "9229:9229"
+    volumes:
+      - "./backend:/usr/src/app"
+
+  angular:
+    build:
+      context: frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - "./frontend/src/:/usr/share/nginx/html"
