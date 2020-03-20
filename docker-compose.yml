@@ -4,7 +4,7 @@ services:
   node:
     build:
       context: backend
-    command: npm run cric_api
+    command: nodemon ./src/server.js
     ports:
       - "9229:9229"
     volumes:
