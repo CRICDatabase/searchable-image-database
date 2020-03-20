@@ -6,9 +6,9 @@ services:
       context: backend
     command: nodemon ./src/server.js
     ports:
-      - "9229:9229"
+      - "3000:3000"
     volumes:
-      - "./backend:/usr/src/app"
+      - "./backend:/opt/cric/backend"
 
   angular:
     build:

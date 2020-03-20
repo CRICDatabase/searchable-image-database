@@ -40,4 +40,4 @@ use
 $ docker-compose exec CONTAINER sh
 ```
 
-where `CONTAINER` is `searchable-image-database_node` or `searchable-image-database_angular`.
+where `CONTAINER` is `node` or `sangular`.
