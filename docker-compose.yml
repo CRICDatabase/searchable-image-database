@@ -9,11 +9,16 @@ services:
       - "3000:3000"
     volumes:
       - "./backend:/opt/cric/backend"
+      #  Anonymous volume to avoid overwritten by the mounting of the host directory at runtime.
+      - "/opt/cric/backend/node_modules"
 
   angular:
     build:
       context: frontend
+    command: ng serve
     ports:
-      - "8080:80"
+      - "8080:4200"
     volumes:
-      - "./frontend/src/:/usr/share/nginx/html"
+      - "./frontend:/opt/cric/frontend"
+      #  Anonymous volume to avoid overwritten by the mounting of the host directory at runtime.
+      - "/opt/cric/frontend/node_modules"

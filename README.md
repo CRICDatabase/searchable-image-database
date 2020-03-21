@@ -23,7 +23,7 @@ The first time,
 `docker-compose` will download some images.
 This process will take some time but will **only** happen during the first time.
 
-Access [http://localhost:9229/](http://localhost:9229/) from your web browser
+Access [http://localhost:8080/](http://localhost:8080/) from your web browser
 to test the CRIC Searchable Image Database.
 
 To stop the containers,
@@ -40,4 +40,4 @@ use
 $ docker-compose exec CONTAINER sh
 ```
 
-where `CONTAINER` is `node` or `sangular`.
+where `CONTAINER` is `node` or `angular`.
