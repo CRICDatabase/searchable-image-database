@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  # Web service layer & Application service layer
+  # Web service layer
   node:
     build:
       context: backend
@@ -12,6 +12,17 @@ services:
       #  Anonymous volume to avoid overwritten by the mounting of the host directory at runtime.
       - "/opt/cric/backend/node_modules"
 
+  # Data persistence service layer
+  db:
+    image: mariadb:10.4
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    environment:
+      - MYSQL_ROOT_PASSWORD=123.456
+      - MYSQL_DATABASE=cric
+
+  # Application service layer
   angular:
     build:
       context: frontend

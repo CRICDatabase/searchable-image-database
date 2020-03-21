@@ -22,6 +22,13 @@ $ docker-compose up --abort-on-container-exit
 The first time,
 `docker-compose` will download some images.
 This process will take some time but will **only** happen during the first time.
+Also,
+you need to create the database by running
+
+```
+$ docker-compose exec node npx sequelize db:create
+$ docker-compose exec node npx sequelize db:migrate
+```
 
 Access [http://localhost:8080/](http://localhost:8080/) from your web browser
 to test the CRIC Searchable Image Database.
@@ -37,7 +44,11 @@ If you need to inspect any of the containers,
 use
 
 ```
-$ docker-compose exec CONTAINER sh
+$ docker-compose exec SERVICE sh
 ```
 
-where `CONTAINER` is `node` or `angular`.
+where `SERVICE` is one of the services defined at `docker-compose.yml`:
+
+- `node`
+- `db`
+- `angular`
