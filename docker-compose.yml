@@ -15,7 +15,8 @@ services:
   angular:
     build:
       context: frontend
-    command: ng serve
+    # Need to tell the built in development server to bind to the unspecified IP address
+    command: ng serve --host 0.0.0.0 --port 4200
     ports:
       - "8080:4200"
     volumes:
