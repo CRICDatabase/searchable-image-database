@@ -1,6 +1,8 @@
 [submodule "frontend"]
 	path = frontend
 	url = git@github.com:CRICDatabase/searchable-image-database-angular.git
+	ignore = untracked
 [submodule "backend"]
 	path = backend
 	url = git@github.com:CRICDatabase/searchable-image-database-nodejs.git
+	ignore = untracked
