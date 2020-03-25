@@ -14,10 +14,11 @@ services:
 
   # Data persistence service layer
   db:
-    image: mariadb:10.4
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: example
+    image: mysql:5.7.20
+    volumes:
+      - "db_data:/var/lib/mysql"
+    ports:
+      - "3306:3306"
     environment:
       - MYSQL_ROOT_PASSWORD=123.456
       - MYSQL_DATABASE=cric
@@ -34,3 +35,6 @@ services:
       - "./frontend:/opt/cric/frontend"
       #  Anonymous volume to avoid overwritten by the mounting of the host directory at runtime.
       - "/opt/cric/frontend/node_modules"
+
+volumes:
+  db_data:
