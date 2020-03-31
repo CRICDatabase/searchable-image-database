@@ -1,8 +1,17 @@
-# CRIC Searchable Image Database
+This repository contains code underpinning the database used by the Center for Recognition and Inspection of Cells (CRIC) at Universidade Federal de Ouro Preto in Brazil. 
 
-CRIC Searchable Image Database is a public cervical cell image database aiming supporting cervical cancer analysis of Pap smear.
+# Center for Recognition and Inspection of Cells (CRIC) 
 
-https://cricdatabase.com.br/ used this source code from 01 July, 2020.
+[CRIC Searchable Image Database](https://cricdatabase.com.br/) is a public database containing cervical cell images. This database helps analyse results of commonly
+used Pap smear for any signs of cervical cancer. The database was created and is maintained at the 
+All data in the database has been anonymised.
+The database has been using the code in this repository since 01 July, 2020.
+
+# Develop
+
+In order to run the database locally you need to have [Docker](https://docs.docker.com/install/) installed. 
+
+## Setup
 
 ## Submodules
 
