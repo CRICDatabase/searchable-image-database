@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: node
+  name: node
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: node
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: node
+    spec:
+      containers:
+      - args:
+        - nodemon
+        - ./src/server.js
+        image: cricdatabase/nodejs:0.1.1
+        imagePullPolicy: ""
+        name: node
+        ports:
+        - containerPort: 3000
+        resources: {}
+        volumeMounts:
+        - mountPath: /opt/cric/backend/src/assets/imagens
+          name: node-image
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - name: node-image
+        persistentVolumeClaim:
+          claimName: node-image
+status: {}
