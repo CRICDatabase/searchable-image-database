@@ -35,8 +35,8 @@ Also,
 you need to create the database by running
 
 ```
-$ docker-compose exec node npx sequelize db:create
-$ docker-compose exec node npx sequelize db:migrate
+$ docker-compose exec nodejs npx sequelize db:create
+$ docker-compose exec nodejs npx sequelize db:migrate
 ```
 
 Access [http://localhost:8080/](http://localhost:8080/) from your web browser
@@ -58,6 +58,6 @@ $ docker-compose exec SERVICE sh
 
 where `SERVICE` is one of the services defined at `docker-compose.yml`:
 
-- `node`
+- `nodejs`
 - `db`
 - `angular`

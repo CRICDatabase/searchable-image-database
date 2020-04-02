@@ -1,11 +1,13 @@
 version: "3.7"
 services:
   # Web service layer
-  node:
+  nodejs:
     build:
       context: backend
       target: base
     command: nodemon ./src/server.js
+    depends_on:
+      - db
     ports:
       - "3000:3000"
     volumes:
@@ -20,9 +22,9 @@ services:
       - "db_data:/var/lib/mysql"
     ports:
       - "3306:3306"
-    environment:
-      - MYSQL_ROOT_PASSWORD=123.456
-      - MYSQL_DATABASE=cric
+    env_file:
+      - ./mysql.dev.env
+      - ./mysql.prod.env
 
   # Application service layer
   angular:
@@ -31,6 +33,8 @@ services:
       target: base
     # Need to tell the built in development server to bind to the unspecified IP address
     command: ng serve --host 0.0.0.0 --port 4200
+    depends_on:
+      - nodejs
     ports:
       - "8080:4200"
     volumes:
