@@ -4,17 +4,14 @@ metadata:
   annotations:
     kompose.cmd: kompose convert -f docker-compose.yml -o k8s
     kompose.version: 1.21.0 (992df58d8)
-    service.beta.kubernetes.io/do-loadbalancer-protocol: "http"
   creationTimestamp: null
   labels:
     name: angular
   name: angular
 spec:
-  type: LoadBalancer
   ports:
-  - name: "80"
-    protocol: TCP
-    port: 80
+  - name: "8080"
+    port: 8080
     targetPort: 4200
   selector:
     name: angular
