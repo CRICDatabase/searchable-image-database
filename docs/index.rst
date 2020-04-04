@@ -28,13 +28,13 @@ REST API
 --------
 
 - The reference implementation is write in Node.js.
-  The documentation is available at https://readthedocs.org/.
+  The documentation is available at https://cric-database.readthedocs.io/projects/backend-nodejs/.
 
 Web Clients
 -----------
 
 - The reference implementation is write in Angular.
-  The documentation is available at https://readthedocs.org/.
+  The documentation is available at https://cric-database.readthedocs.io/projects/frontend-angular/.
 
 Indices and tables
 ------------------
