@@ -1,0 +1,2 @@
+sphinxcontrib.httpdomain
+sphinx-js==2.8
