@@ -36,6 +36,24 @@ Web Clients
 - The reference implementation is write in Angular.
   The documentation is available at https://cric-database.readthedocs.io/projects/frontend-angular/.
 
+Testing
+-------
+
+..  toctree::
+    :maxdepth: 2
+    :caption: Contents:
+
+    docker
+
+Running in Production
+---------------------
+
+..  toctree::
+    :maxdepth: 2
+    :caption: Contents:
+
+    kubernetes
+
 Indices and tables
 ------------------
 
