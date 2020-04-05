@@ -128,7 +128,18 @@ get more information using::
 If you need to access the log,
 use ::
 
-    $ kubectl logs -p chashed-pod-name -n cricdatabase
+    $ kubectl logs pod-name -n cricdatabase
+
+..  node::
+
+    For crashed pods,
+    you want to look at the previous pod::
+
+        $ kubectl logs -p pod-name -n cricdatabase
+
+You can also connect to the log sreaming using the ``-f`` flag ::
+
+    $ kubectl logs -f pod-name -n cricdatabase
 
 To gain Shell access to the pod::
 
