@@ -28,11 +28,12 @@ spec:
       - args:
         - ng
         - serve
+        - --disableHostCheck=true
         - --host
         - 0.0.0.0
         - --port
         - "4200"
-        image: cricdatabase/angular:0.1.1
+        image: cricdatabase/angular:0.1.4
         imagePullPolicy: ""
         name: angular
         ports:

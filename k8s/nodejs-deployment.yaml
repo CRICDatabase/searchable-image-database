@@ -28,7 +28,7 @@ spec:
       - args:
         - nodemon
         - ./src/server.js
-        image: cricdatabase/nodejs:0.1.1
+        image: cricdatabase/nodejs:0.1.5
         imagePullPolicy: ""
         name: nodejs
         ports:

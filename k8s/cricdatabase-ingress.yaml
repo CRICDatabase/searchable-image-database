@@ -2,11 +2,9 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: cricdatabase
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: "cricdatabase.com.br"
+  - host: database.cric.com.br
     http:
       paths:
       - path: /api
