@@ -136,6 +136,7 @@ If the website is working as expected,
 is time to open it to the world ::
 
     $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml
+    $ kubectl apply -f k8s/cricdatabase-configmap.yaml -n ingress-nginx
 
 Create a DigitalOcean Load Balancer
 that will load balance
