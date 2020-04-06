@@ -25,15 +25,17 @@ spec:
         name: angular
     spec:
       containers:
+      # Need to tell the built in development server to bind to the unspecified IP address.
+      # In IPv4 that address is 0.0.0.0.
+      # Otherwise, you will have "Connection reset by peer".
+      # And need to disbale host check otherwise will have "Invalid Host header".
       - args:
         - ng
         - serve
-        - --disableHostCheck=true
         - --host
         - 0.0.0.0
-        - --port
-        - "4200"
-        image: cricdatabase/angular:0.1.4
+        - --disable-host-check
+        image: cricdatabase/angular:0.1.6-production-all
         imagePullPolicy: ""
         name: angular
         ports:

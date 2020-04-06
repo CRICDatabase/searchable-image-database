@@ -26,9 +26,15 @@ spec:
     spec:
       containers:
       - args:
-        - nodemon
-        - ./src/server.js
-        image: cricdatabase/nodejs:0.1.5
+        - npm
+        - run
+        - start
+        env:
+          - name: NODE_ENV
+            value: production
+          - name: DEBUG
+            value: "express:*"
+        image: cricdatabase/nodejs:0.1.7-production
         imagePullPolicy: ""
         name: nodejs
         ports:

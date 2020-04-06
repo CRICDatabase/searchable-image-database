@@ -7,10 +7,12 @@ spec:
   - host: database.cric.com.br
     http:
       paths:
-      - path: /api
-        backend:
-          serviceName: nodejs
-          servicePort: 3000
       - backend:
           serviceName: angular
           servicePort: 8080
+  - host: api.database.cric.com.br
+    http:
+      paths:
+      - backend:
+          serviceName: nodejs
+          servicePort: 3000

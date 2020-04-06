@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  allow-backend-server-header: "true"
+  enable-underscores-in-headers: "true"
+  ignore-invalid-headers: "false"
+kind: ConfigMap
+metadata:
+  name: nginx-configuration
