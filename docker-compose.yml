@@ -5,6 +5,8 @@ services:
     build:
       context: backend
       target: base
+    environment:
+      - "DEBUG=express:*"
     command: nodemon ./src/server.js
     depends_on:
       - db
@@ -31,8 +33,10 @@ services:
     build:
       context: frontend
       target: base
-    # Need to tell the built in development server to bind to the unspecified IP address
-    command: ng serve --host 0.0.0.0 --port 4200
+    # Need to tell the built in development server to bind to the unspecified IP address.
+    # In IPv4 that address is 0.0.0.0.
+    # Otherwise, you will have "Connection reset by peer"
+    command: ng serve --host 0.0.0.0
     depends_on:
       - nodejs
     ports:
