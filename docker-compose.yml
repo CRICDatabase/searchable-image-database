@@ -4,9 +4,7 @@ services:
   nodejs:
     build:
       context: backend
-      target: base
-    environment:
-      - "DEBUG=express:*"
+      target: development
     command: nodemon ./src/server.js
     depends_on:
       - db
@@ -32,7 +30,7 @@ services:
   angular:
     build:
       context: frontend
-      target: base
+      target: development
     # Need to tell the built in development server to bind to the unspecified IP address.
     # In IPv4 that address is 0.0.0.0.
     # Otherwise, you will have "Connection reset by peer"
