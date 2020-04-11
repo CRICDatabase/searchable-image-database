@@ -34,7 +34,7 @@ spec:
             value: production
           - name: DEBUG
             value: "express:*"
-        image: cricdatabase/nodejs:0.1.7-production
+        image: cricdatabase/nodejs:0.1.7-migration-production
         imagePullPolicy: ""
         name: nodejs
         ports:
