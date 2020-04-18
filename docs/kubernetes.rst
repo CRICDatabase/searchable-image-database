@@ -90,7 +90,7 @@ use ::
 
     $ kubectl logs pod-name -n cricdatabase
 
-..  node::
+..  note::
 
     For crashed pods,
     you want to look at the previous pod::
