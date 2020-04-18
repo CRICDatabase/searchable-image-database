@@ -1,6 +1,19 @@
 Contributor
 ===========
 
+Code
+----
+
+Have a look at the source files
+to see examples of how we structure things.
+
+We use the following conventions based on [PEP8]_:
+
+- Code should always use UTF-8
+- Code should always use Unix line endings(``\n``)
+- Use 4 spaces per indentation level
+- Avoid trailing whitespace anywhere
+
 Documentation
 -------------
 
@@ -23,7 +36,9 @@ Three Bash scripts are available to help with examples:
 - ``docs/examples/localhost2cric.sh`` change the domain in the examples from ``localhost:3000`` to ``cricdatabase.com.br``
 
 ..
-    AuthorLastName, AuthorFirstName. *Title of Article or Individual Page*. Title of website, Name of publisher, Date of publication, URL or DOI.
+    AuthorFirstName AuthorLastName. *Title of Article or Individual Page*. Title of website, Name of publisher, Date of publication, URL or DOI.
 
-.. [Tom2019] Johnson, Tom. *Learn API Doc*. 2020. https://idratherbewriting.com/learnapidoc/.
+.. [PEP8] Guido van Rossum, Barry Warsaw, Nick Coghlan. *PEP 8 -- Style Guide
+          for Python Code*. 2013. https://www.python.org/dev/peps/pep-0008/
+.. [Tom2019] Tom Johnson. *Learn API Doc*. 2020. https://idratherbewriting.com/learnapidoc/.
 .. [RESTfulAPI.net] RESTfulAPI.net. *REST Resource Naming Guide*. REST API Tutorial. 2020. https://restfulapi.net/resource-naming/.
