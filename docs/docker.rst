@@ -65,3 +65,11 @@ where ``SERVICE`` is one of the services defined at ``docker-compose.yml``:
 - ``nodejs``
 - ``db``
 - ``angular``
+
+Load Real Data
+--------------
+
+If you have access to the SQL dump,
+you can load it into container cluster::
+
+    $ docker-compose exec -T db mysql -p123.456 cric < nodejs.sql
