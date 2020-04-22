@@ -35,7 +35,7 @@ spec:
         - --host
         - 0.0.0.0
         - --disable-host-check
-        image: cricdatabase/angular:0.1.6-production-all
+        image: cricdatabase/angular:0.1.10-production
         imagePullPolicy: ""
         name: angular
         ports:
