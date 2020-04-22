@@ -34,7 +34,7 @@ services:
     # Need to tell the built in development server to bind to the unspecified IP address.
     # In IPv4 that address is 0.0.0.0.
     # Otherwise, you will have "Connection reset by peer"
-    command: ng serve --host 0.0.0.0
+    command: npm run start-dev
     depends_on:
       - nodejs
     ports:
