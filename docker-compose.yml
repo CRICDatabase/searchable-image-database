@@ -6,8 +6,8 @@ services:
       context: backend
       target: development
     command: nodemon ./src/server.js
-    depends_on:
-      - db
+    environment:
+      DEBUG: "database.cric:*"
     ports:
       - "3000:3000"
     volumes:
@@ -35,8 +35,6 @@ services:
     # In IPv4 that address is 0.0.0.0.
     # Otherwise, you will have "Connection reset by peer"
     command: npm run start-dev
-    depends_on:
-      - nodejs
     ports:
       - "8080:4200"
     volumes:
