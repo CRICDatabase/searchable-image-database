@@ -56,6 +56,7 @@ Deploy the Block Storage Volume pods into the ``cricdatabase`` namespace::
 
     $ kubectl apply -f k8s/db-data.yaml -n cricdatabase
     $ kubectl apply -f k8s/nodejs-image.yaml -n cricdatabase
+    $ kubectl apply -f k8s/angular-log-data.yaml -n cricdatabase
 
 Check the pod is up and running in the cluster::
 

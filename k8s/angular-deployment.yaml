@@ -29,19 +29,19 @@ spec:
       # In IPv4 that address is 0.0.0.0.
       # Otherwise, you will have "Connection reset by peer".
       # And need to disbale host check otherwise will have "Invalid Host header".
-      - args:
-        - ng
-        - serve
-        - --host
-        - 0.0.0.0
-        - --disable-host-check
-        image: cricdatabase/angular:0.1.10-production
+      - image: cricdatabase/angular:2.0.3-production
         imagePullPolicy: ""
         name: angular
         ports:
-        - containerPort: 4200
+        - containerPort: 80
         resources: {}
         volumeMounts:
+        - mountPath: /etc/nginx/logs
+          name: angular-log-data
       restartPolicy: Always
       serviceAccountName: ""
+      volumes:
+      - name: angular-log-data
+        persistentVolumeClaim:
+          claimName: angular-log-data
 status: {}
