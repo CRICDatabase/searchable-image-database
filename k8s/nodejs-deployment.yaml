@@ -32,8 +32,6 @@ spec:
         env:
           - name: NODE_ENV
             value: production
-          - name: DEBUG
-            value: "express:*"
         image: cricdatabase/nodejs:0.1.8-migration-production
         imagePullPolicy: ""
         name: nodejs
