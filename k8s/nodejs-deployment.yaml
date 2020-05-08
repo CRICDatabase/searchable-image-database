@@ -32,7 +32,7 @@ spec:
         env:
           - name: NODE_ENV
             value: production
-        image: cricdatabase/nodejs:0.1.8-migration-production
+        image: cricdatabase/nodejs:2.0.0-production
         imagePullPolicy: ""
         name: nodejs
         ports:
