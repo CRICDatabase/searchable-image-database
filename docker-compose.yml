@@ -1,5 +1,13 @@
 version: "3.7"
 services:
+  # Reverse proxy layer
+  nginx: 
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8080:80
+
   # Web service layer
   nodejs:
     build:
@@ -36,7 +44,7 @@ services:
     # Otherwise, you will have "Connection reset by peer"
     command: npm run start-dev
     ports:
-      - "8080:4200"
+      - "4200:4200"
     volumes:
       - "./frontend:/opt/cric/frontend"
       #  Anonymous volume to avoid overwritten by the mounting of the host directory at runtime.
