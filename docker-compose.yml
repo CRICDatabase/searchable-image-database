@@ -46,9 +46,9 @@ services:
     environment:
       # Development values
       CRIC_DOMAIN: "http://localhost:8080"
-      CRIC_API_DOMAIN: "http://localhost:3000"
+      CRIC_API_DOMAIN: "http://localhost:8080"
       CRIC_EMAIL: "cric@ufop.edu.br"
-      CRIC_PLAYGROUND: "true"
+      CRIC_PLAYGROUND: "false"
     ports:
       - "4200:4200"
     volumes:
