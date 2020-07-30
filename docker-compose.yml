@@ -43,6 +43,12 @@ services:
     # In IPv4 that address is 0.0.0.0.
     # Otherwise, you will have "Connection reset by peer"
     command: npm run start-dev
+    environment:
+      # Development values
+      CRIC_DOMAIN: "http://localhost:8080"
+      CRIC_API_DOMAIN: "http://localhost:3000"
+      CRIC_EMAIL: "cric@ufop.edu.br"
+      CRIC_PLAYGROUND: "true"
     ports:
       - "4200:4200"
     volumes:
