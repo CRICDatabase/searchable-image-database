@@ -1,18 +1,6 @@
 Kubernetes
 ==========
 
-Docker to Kubernetes
---------------------
-
-Kubernetes configuration files are generated from ``docker-compose.yml``::
-
-    $ kompose convert -f docker-compose.yml -o k8s
-
-Production Server
------------------
-
-We use Kubernetes to orchestrate the deployment.
-
 ..  note::
 
     You can use ``kubectl apply``
@@ -24,8 +12,15 @@ We use Kubernetes to orchestrate the deployment.
     to the new Kubernetes cluster,
     you will have to update the DNS.
 
+Docker to Kubernetes
+--------------------
+
+Kubernetes configuration files are generated from ``docker-compose.yml``::
+
+    $ kompose convert -f docker-compose.yml -o k8s
+
 DigitalOcean
-^^^^^^^^^^^^
+------------
 
 Visit https://cloud.digitalocean.com/kubernetes
 and create a new cluster.
