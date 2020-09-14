@@ -1,6 +1,6 @@
-==============
- User Account
-==============
+============
+User Account
+============
 
 ====================== ======= ======== =============
 Action                 Visitor User     Administrator
