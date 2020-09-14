@@ -18,15 +18,7 @@ https://hub.docker.com/orgs/cricdatabase
 is the organisation of the project on Docker Hub.
 We store Docker images there.
 
-To build the image,
-use ::
-
-    $ docker build --target build-env -t repository/name:tagname .
-
-To upload the image,
-use ::
-
-    $ docker push repository/name:tagname
+New images are build using GitHub Actions.
 
 Backend
 ^^^^^^^
