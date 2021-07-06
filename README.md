@@ -11,6 +11,11 @@ The database has been using the code in this repository since 01 July, 2020.
 
 Is available at https://cric-database.readthedocs.io/.
 
+# Suplementary Information
+
+[Supplementary Video](https://static-content.springer.com/esm/art%3A10.1038%2Fs41597-021-00933-8/MediaObjects/41597_2021_933_MOESM1_ESM.mp4)
+
+
 # Citation
 
 If you use any of this code or our ideas, please cite the following paper:
