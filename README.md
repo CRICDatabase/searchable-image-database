@@ -13,22 +13,21 @@ Is available at https://cric-database.readthedocs.io/.
 
 # Citation
 
-If you use any of this code or our ideas, please cite one of these publications:
+If you use any of this code or our ideas, please cite the following paper:
 
-BibTex\
-Preprint:
+Rezende, M.T., Silva, R., Bernardo, F.d.O. et al. [Cric searchable image database as a public platform for conventional pap smear cytology data](https://doi.org/10.1038/s41597-021-00933-8). Scientific Data - Nature, 8, 151 (2021). 
 
-Journal Publication:
+Journal Publication Bibtex:
 
-@article{rezende2021cric,
-  title={Cric searchable image database as a public platform for conventional pap smear cytology data},
-  author={Rezende, Mariana T and Silva, Raniere and Bernardo, Fagner de O and Tobias, Alessandra HG and Oliveira, Paulo HC and Machado, Tales M and Costa, Caio S and Medeiros,     Fatima NS and Ushizima, Daniela M and Carneiro, Claudia M and others},
-  journal={Scientific Data},
-  volume={8},
-  number={1},
-  pages={1--8},
-  year={2021},
-  publisher={Nature Publishing Group}
-  doi = {https://doi.org/10.1038/s41597-021-00933-8},
-  url = {https://www.nature.com/articles/s41597-021-00933-8},
-}
+     @article{rezende2021cric,
+    title={Cric searchable image database as a public platform for conventional pap smear cytology data},
+    author={Rezende, Mariana T and Silva, Raniere and Bernardo, Fagner de O and Tobias, Alessandra HG and Oliveira, Paulo HC and Machado, Tales M and Costa, Caio S and Medeiros,     Fatima NS and Ushizima, Daniela M and Carneiro, Claudia M and others},
+    journal={Scientific Data},
+    volume={8},
+    number={1},
+    pages={1--8},
+    year={2021},
+    publisher={Nature Publishing Group}
+    doi = {https://doi.org/10.1038/s41597-021-00933-8},
+    url = {https://www.nature.com/articles/s41597-021-00933-8}
+     }
