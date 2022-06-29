@@ -28,6 +28,20 @@ run ::
 
     $ git submodule init
     $ git submodule update
+  
+Now you just have to update them by running ::
+
+    $ cd frontend
+    $ git checkout master
+    $ git pull
+    $ git submodule update --init --recursive
+    $ cd ..
+    
+    $ cd backend
+    $ git checkout master
+    $ git pull
+    $ git submodule update --init --recursive
+    $ cd ..
 
 Running
 -------
