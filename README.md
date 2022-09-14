@@ -36,3 +36,8 @@ Journal Publication Bibtex:
     doi = {https://doi.org/10.1038/s41597-021-00933-8},
     url = {https://www.nature.com/articles/s41597-021-00933-8}
      }
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
